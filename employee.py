@@ -9,11 +9,11 @@ class Employee:
 
     @property
     def email(self):
-        return '{}.{}@email.com'.format(self.last,self.first)
+        return '{}.{}@email.com'.format(self.first, self.last)
 
     @property
     def fullname(self):
-        return '{} {}'.format(self.last, self.first)
+        return '{} {}'.format(self.first, self.last)
 
     def apply_raise(self):
         self.pay = int(self.pay * self.raiseForEmployees)
